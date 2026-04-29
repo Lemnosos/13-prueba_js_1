@@ -5,10 +5,8 @@ Ejemplo: Para "Ana" devolverá "A N A".
 */
 
 let nombre1 = "antoñito"
-let nombre_solucion = ""
-let nombre1_mayus = nombre1.toUpperCase();
 let solucion = []
-solucion = nombre1_mayus.split("")
+solucion = nombre1.toUpperCase().split("")
 solucion.forEach((letra) => { nombre_solucion += (letra + " ") })
 console.log(`${nombre1} se convierte en ${nombre_solucion}`)
 
@@ -19,8 +17,7 @@ Declara una función que acepte un nombre como parámetro y devuelva el número 
 Ejemplo: Para "Antonio Alberto Jesús" devolverá 3.
 */
 let nombre2 = "antoñito currupipi fernando de la santisima trinidad"
-let array_nombres = nombre2.split(" ")
-let palabras = array_nombres.length
+let palabras = nombre2.split(" ").length
 console.log(`"${nombre2}" está formado por ${palabras} palabras`)
 
 
